@@ -1,0 +1,8 @@
+replicaCount: 3
+ingress:
+  host: app.dev
+configmap:
+  profile: "dev"
+spring:
+  profile: "dev"
+  

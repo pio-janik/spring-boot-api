@@ -1,0 +1,8 @@
+replicaCount: 5
+ingress:
+  host: app.prd
+configmap:
+  profile: "prd"
+spring:
+  profile: "prd"
+  

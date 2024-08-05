@@ -1,0 +1,18 @@
+image:
+  repository: busybox
+  pullPolicy: IfNotPresent
+  tag: "stable"
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+replicaCount: 3
+ingress:
+  host: app.local
+configmap:
+  profile: "local"
+spring:
+  profile: "local"
